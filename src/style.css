@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: var(--background);
+    --color-card-background: var(--card-background);
+    --color-foreground: var(--foreground);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-indigo-accent: var(--indigo-accent);
+    --color-rose-accent: var(--rose-accent);
+}
+
+:root {
+    font-family: "Quicksand", Helvetica, Arial, sans-serif;
+    font-synthesis: weight;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Dark Mode Colors */
+    --background: var(--color-zinc-950);
+    --card-background: var(--color-zinc-900);
+    --foreground: var(--color-zinc-50);
+    --secondary-foreground: var(--color-zinc-400);
+    --indigo-accent: var(--indigo-600);
+    --rose-accent: var(--rose-600);
+}
+
+.text-highlight {
+    @apply bg-amber-200 text-zinc-950 font-bold px-0.5;
+}
+
+.tag-highlight {
+    @apply bg-amber-200 text-zinc-950 font-bold text-sm px-0.5;
+}
+
+.project-title {
+    @apply text-xl;
+}

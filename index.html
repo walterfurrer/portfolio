@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Data -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Walter Furrer" />
+        <meta name="description" content="Walter Furrer's Web Developer Portfolio" />
+        <!-- Styles -->
+        <link rel="canonical_url" href="https://walterfurrer.netlify.app/" />
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        </style>
+        <link rel="stylesheet" href="/src/style.css" />
+        <title>Walter Furrer | Web Developer</title>
+    </head>
+    <body class="bg-background text-foreground h-svh box-border">
+        <div class="site mx-auto flex flex-col gap-16 px-4 min-w-s max-w-5xl">
+            <nav class="flex flex-row justify-between mt-8">
+                <a href="#">
+                    <img src="public/images/wf-logo.webp" alt="logo" class="w-16" />
+                </a>
+                <ul class="flex flex-row gap-4 self-center">
+                    <!-- <li>
+                        <a href="#" class="text-xl">Home</a>
+                    </li> -->
+                    <li>
+                        <a href="#about" class="text-xl">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="text-xl">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-xl">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="flex flex-col gap-y-8">
+                <section id="about" class="bg-zinc-900 flex flex-col gap-4 px-4 py-8 text-left rounded-3xl md:flex-row">
+                    <div class="flex flex-col gap-2">
+                        <h1 class="text-4xl font-bold">
+                        Hi, I'm
+                        <span class="bg-linear-to-br from-indigo-950 via-indigo-500 to-rose-400 bg-clip-text text-transparent">Walter</span>
+                        </h1>
+                        <p class="text-xl text-balance ">Helping to bridge the gap between people and technology</p>
+                        <img src="/images/pfp-cropped.webp" alt="Headshot of Walter" class="min-w-xs max-w-sm rounded-xl" />
+                    </div>
+                    <div class="bio text-base text-pretty flex flex-col gap-2 text-left md:self-center">
+                        <p><span class="text-highlight">With nearly two decades of professional experience</span> across various industries, I bring a customer-first mindset to every project I work on. My background in customer support, managing B2B accounts, and working directly with end users gives me a unique perspective: <span class="text-highlight">I understand what customers actually want and need.</span>
+                        </p>
+                        <p>
+                        As a Developer, <span class="text-highlight">I focus on building solutions that serve people.</span> Solutions that are intuitive, reliable, and that people enjoy using.
+                        </p>
+                        <p>My approach is simple: bridge the gap between people and technology by <span class="text-highlight">combining technical expertise with a deep understanding of how customers think and work.</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="projects" class="bg-zinc-900 flex flex-col gap-y-4 px-4 py-8 text-left rounded-3xl">
+                    <div>
+                        <h2 class="text-3xl font-semibold">Projects</h2>
+                        <p class="text-secondary-foreground text-balance text-lg">A growing collection of projects that I am working on</p>
+                    </div>
+                    <div class="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-4">
+                        <div class="flex flex-col gap-2">
+                            <h3 class="project-title">Portfolio</h3>
+                            <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                <a class="hover:text-foreground" href="https://github.com/walterfurrer/vite-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <p>|</p>
+                                <a class="hover:text-foreground" href="https://walterfurrer.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                            </div>
+                            <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/homepage-dark.webp" alt="Screenshot of the Portfolio project homepage">
+                            <p class="text-pretty">The very site you're on! Originally meant to act as a home for some simple JavaScript projects I was working on in order to learn the language, it turned into something I felt comfortable represnting myself online.</p>
+                            <div>
+                                <ul class="flex flex-row gap-x-2">
+                                    <li><p class="tag-highlight">HTML</p></li>
+                                    <li><p class="tag-highlight">TailwindCSS</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="project-title">Learning JavaScript</h3>
+                            <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                <a class="hover:text-foreground" href="https://github.com/walterfurrer/learning-js" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <p>|</p>
+                                <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                            </div>
+                            <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/homepage-dark.webp" alt="Screenshot of the Portfolio project homepage">
+                            <p class="text-pretty">A site to house some small JavaScript projects as I learn the language.</p>
+                            <div>
+                                <ul class="flex flex-row gap-x-2">
+                                    <li><p class="tag-highlight">HTML</p></li>
+                                    <li><p class="tag-highlight">CSS</p></li>
+                                    <li><p class="tag-highlight">JavaScript</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="project-title">do the thing</h3>
+                            <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                <a class="hover:text-foreground" href="https://github.com/walterfurrer/doTheThing" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <!-- <p>|</p>
+                                <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a> -->
+                            </div>
+                            <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/do-the-thing.webp" alt="Screenshot of Walter's 'do the thing' website">
+                            <p class="text-pretty">do the thing is my first project using Laravel and PHP. It was inspired by the lovely folks in the LGT Discord who pushed me to just start building instead of getting caught up in tutorials or reading docs.</p>
+
+                            <p class="text-pretty">
+                            In addition, there are days where we have a hard time doing something, even if it is something that we enjoy! I hope to continue to add motivating quotes from those around me that I can turn to when I need help "doing the thing".</p>
+                            <div>
+                                <ul class="flex flex-row gap-x-2">
+                                    <li><p class="tag-highlight">HTML</p></li>
+                                    <li><p class="tag-highlight">TailwindCSS</p></li>
+                                    <li><p class="tag-highlight">PHP</p></li>
+                                    <li><p class="tag-highlight">Laravel</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="bg-zinc-900 flex flex-col gap-8 px-4 pt-8 text-left text-pretty rounded-3xl">
+                    <div>
+                        <h2 class="text-3xl font-semibold">Let's Connect</h2>
+                        <p class="text-lg">Feeling up for quick chat? Use the calendar below to schedule a time and date! You can also reach me at <a class="font-bold text-indigo-400 hover:underline" href="mailto:walterfurrer.dev@gmail.com">walterfurrer.dev@gmail.com</a> if email is more your style.</p>
+                    </div>
+                    <div class="cal-com">
+                        <!-- Cal inline embed code begins -->
+                        <div class="contact__calendar" id="my-cal-inline"></div>
+                        <script type="text/javascript">
+                            (function (C, A, L) {
+                                let p = function (a, ar) {
+                                    a.q.push(ar);
+                                };
+                                let d = C.document;
+                                C.Cal =
+                                    C.Cal ||
+                                    function () {
+                                        let cal = C.Cal;
+                                        let ar = arguments;
+                                        if (!cal.loaded) {
+                                            cal.ns = {};
+                                            cal.q = cal.q || [];
+                                            d.head.appendChild(d.createElement("script")).src = A;
+                                            cal.loaded = true;
+                                        }
+                                        if (ar[0] === L) {
+                                            const api = function () {
+                                                p(api, arguments);
+                                            };
+                                            const namespace = ar[1];
+                                            api.q = api.q || [];
+                                            if (typeof namespace === "string") {
+                                                cal.ns[namespace] = cal.ns[namespace] || api;
+                                                p(cal.ns[namespace], ar);
+                                                p(cal, ["initNamespace", namespace]);
+                                            } else p(cal, ar);
+                                            return;
+                                        }
+                                        p(cal, ar);
+                                    };
+                            })(window, "https://app.cal.com/embed/embed.js", "init");
+                            Cal("init", "coffee-chat", { origin: "https://cal.com" });
+
+                            Cal.ns["coffee-chat"]("inline", {
+                                elementOrSelector: "#my-cal-inline",
+                                config: { layout: "month_view" },
+                                calLink: "walterfurrer/coffee-chat",
+                            });
+
+                            Cal.ns["coffee-chat"]("ui", {
+                                cssVarsPerTheme: { light: { "cal-brand": "#1e1b4b" }, dark: { "cal-brand": "#818cf8" } },
+                                hideEventTypeDetails: false,
+                                layout: "month_view",
+                            });
+                        </script>
+                        <!-- Cal inline embed code ends --></div>
+                </section>
+            </main>
+            <footer>
+                <ul class="flex flex-row justify-self-end gap-8">
+                    <li>
+                        <a href="https://github.com/walterfurrer" target="_blank">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/walterfurrer/" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/waltercodes" target="_blank">
+                            Twitter/X
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
