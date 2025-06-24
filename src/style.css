@@ -26,11 +26,11 @@
 }
 
 .text-highlight {
-    @apply bg-amber-200 text-zinc-950 font-bold px-0.5;
+    @apply bg-[#D1ACD6] text-zinc-950 font-bold p-0.5;
 }
 
 .tag-highlight {
-    @apply bg-amber-200 text-zinc-950 font-bold text-sm px-0.5;
+    @apply bg-indigo-200 text-zinc-950 font-bold text-sm px-0.5;
 }
 
 .project-title {
@@ -46,5 +46,5 @@ img {
 }
 
 .technology-logo {
-    @apply size-18;
+    @apply size-16;
 }
