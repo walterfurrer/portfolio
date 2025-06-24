@@ -34,17 +34,17 @@
             </nav>
             <main class="flex flex-col gap-y-8">
                 <section id="about" class="section">
-                    <div class="flex flex-col gap-4 text-left md:flex-row">
+                    <div class="flex flex-col text-left place-content-around md:grid md:grid-cols-2">
                         <div class="flex flex-col gap-2">
                             <h1 class="text-4xl font-bold">
                             Hi, I'm
                             <span class="bg-linear-to-br from-indigo-950 via-indigo-500 to-rose-400 bg-clip-text text-transparent">Walter</span>
                             </h1>
-                            <p class="text-xl text-balance">Helping to bridge the gap between people and technology</p>
+                            <p class="text-xl text-balance font-semibold md:text-nowrap">Helping to bridge the gap between <span class="text-rose-500">people</span> and <span class="text-indigo-500">technology</span></p>
                             <img src="/images/pfp-cropped.webp" alt="Headshot of Walter" class="min-w-xs max-w-md rounded-xl" />
                         </div>
-                        <div class="flex flex-col gap-4 md:justify-between">
-                            <div class="text-lg text-left text-balance flex flex-col flex-grow gap-4 md:place-content-end">
+                        <div class="flex flex-col gap-8">
+                            <div class="text-lg text-left text-pretty flex flex-col flex-grow gap-4 md:place-content-end">
                                 <p>
                                     With nearly two decades of experience in B2B account management and customer support, <span class="text-highlight">I bring a rare, user-centric perspective to software development.</span> I don't just build applications; I build solutions informed by a deep understanding of what end-users truly need.
                                 </p>
@@ -52,7 +52,7 @@
                                     Today, I apply that same problem-solving mindset to building intuitive and reliable web applications using Laravel, JavaScript, and TailwindCSS. <span class="text-highlight">My goal is to bridge the gap between user needs and technical execution, creating products people love to use.</span>
                                 </p>
                             </div>
-                            <div class="flex flex-col gap-2">
+                            <div class="flex flex-col gap-y-4">
                                 <h2 class="text-lg text-secondary-foreground text-center">Current Tech Stack:</h2>
                                 <div class="flex flex-row justify-around items-end">
                                     <img src="/images/laravel-logo.svg" alt="Laravel logo" class="technology-logo">
@@ -64,19 +64,20 @@
                         <div>
                     </div>
                 </section>
-                <section id="projects" class="bg-card-background flex flex-col gap-y-4 px-4 py-8 text-left rounded-3xl">
+                <section id="projects" class="bg-card-background flex flex-col gap-y-8 px-4 py-8 text-left rounded-3xl">
                     <div>
                         <h2 class="text-3xl font-semibold">Projects</h2>
                         <p class="text-secondary-foreground text-balance text-lg">A growing collection of projects that I am working on</p>
                     </div>
-                    <div class="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-4">
+                    <div class="flex flex-col gap-y-8 md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-8">
                         <div class="flex flex-col gap-2">
-                            <h3 class="project-title">Portfolio</h3>
-                            <div class="flex flex-row gap-x-2 text-secondary-foreground">
-                                <a class="hover:text-foreground" href="https://github.com/walterfurrer/vite-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <p>|</p>
-                                <a class="hover:text-foreground" href="https://walterfurrer.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
-                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="project-title">Portfolio</h3>
+                                <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                    <a class="hover:text-foreground" href="https://github.com/walterfurrer/vite-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <p>|</p>
+                                    <a class="hover:text-foreground" href="https://walterfurrer.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                                </div></div>
                             <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/homepage-dark.webp" alt="Screenshot of the Portfolio project homepage">
                             <p class="text-pretty">The very site you're on! Originally meant to act as a home for some simple JavaScript projects I was working on in order to learn the language, it turned into something I felt comfortable represnting myself online.</p>
                             <div>
@@ -87,11 +88,13 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-y-2">
-                            <h3 class="project-title">Learning JavaScript</h3>
-                            <div class="flex flex-row gap-x-2 text-secondary-foreground">
-                                <a class="hover:text-foreground" href="https://github.com/walterfurrer/learning-js" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <p>|</p>
-                                <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                            <div class="flex flex-col">
+                                <h3 class="project-title">Learning JavaScript</h3>
+                                <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                    <a class="hover:text-foreground" href="https://github.com/walterfurrer/learning-js" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <p>|</p>
+                                    <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                                </div>
                             </div>
                             <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/homepage-dark.webp" alt="Screenshot of the Portfolio project homepage">
                             <p class="text-pretty">A site to house some small JavaScript projects as I learn the language.</p>
@@ -104,11 +107,13 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-y-2">
-                            <h3 class="project-title">do the thing</h3>
-                            <div class="flex flex-row gap-x-2 text-secondary-foreground">
-                                <a class="hover:text-foreground" href="https://github.com/walterfurrer/doTheThing" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <!-- <p>|</p>
-                                <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a> -->
+                            <div class="flex flex-col">
+                                <h3 class="project-title">do the thing</h3>
+                                <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                    <a class="hover:text-foreground" href="https://github.com/walterfurrer/doTheThing" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <!-- <p>|</p>
+                                    <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a> -->
+                                </div>
                             </div>
                             <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/do-the-thing.webp" alt="Screenshot of Walter's 'do the thing' website">
                             <p class="text-pretty">do the thing is my first project using Laravel. It was inspired by the lovely folks in the LGT Discord who pushed me to start building instead of getting caught up in tutorials or reading docs.</p>
@@ -147,7 +152,7 @@
                     </div>
                 </section>
                 <section id="contact" class="bg-card-background flex flex-col gap-8 px-4 pt-8 text-left text-pretty rounded-3xl">
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <h2 class="text-3xl font-semibold">Let's Connect</h2>
                         <p class="text-lg">Feeling up for quick chat? Use the calendar below to schedule a time and date! You can also reach me at <a class="font-bold text-indigo-400 hover:underline" href="mailto:walterfurrer.dev@gmail.com">walterfurrer.dev@gmail.com</a> if email is more your style.</p>
                     </div>

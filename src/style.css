@@ -34,7 +34,7 @@
 }
 
 .project-title {
-    @apply text-xl;
+    @apply text-xl font-semibold;
 }
 
 .section {
