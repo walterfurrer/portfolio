@@ -11,7 +11,7 @@
 
 :root {
     font-family: "Quicksand", Helvetica, Arial, sans-serif;
-    font-synthesis: weight;
+    font-synthesis: weight style;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -35,4 +35,16 @@
 
 .project-title {
     @apply text-xl;
+}
+
+.section {
+    @apply bg-card-background flex flex-col gap-4 px-4 py-8 text-left rounded-3xl;
+}
+
+img {
+    @apply object-contain;
+}
+
+.technology-logo {
+    @apply size-18;
 }
