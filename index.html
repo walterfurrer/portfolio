@@ -15,7 +15,7 @@
         <title>Walter Furrer | Web Developer</title>
     </head>
     <body class="bg-background text-foreground h-svh box-border">
-        <div class="site mx-auto flex flex-col gap-16 px-4 min-w-s max-w-5xl">
+        <div class="site mx-auto flex flex-col gap-16 px-4 min-w-s max-w-7xl">
             <nav class="flex flex-row justify-between mt-8">
                 <a href="index.html">
                     <img src="public/images/wf-logo.webp" alt="logo" class="w-16" />
@@ -42,15 +42,15 @@
                             </h1>
                             <p class="text-xl text-balance">Helping to bridge the gap between <span class="font-bold underline underline-offset-6">people and technology</span></p>
                         </div>
-                        <div class="flex flex-col gap-y-4 text-lg text-pretty">
+                        <div class="flex flex-col flex-grow gap-y-4 text-lg text-pretty justify-center">
                             <p>
                                 With nearly two decades of experience in B2B account management and customer support, <span class="font-bold text-xl">I bring a rare, user-centric perspective to software development.</span> I don't just build applications; I build solutions informed by a deep understanding of what end-users truly need.
                             </p>
                             <p>
-                                Today, I apply that same problem-solving mindset to building intuitive and reliable web applications using Laravel, JavaScript, and TailwindCSS. <span class="font-bold text-xl">My goal is to bridge the gap between user needs and technical execution, creating products people love to use.</span>
+                                Today, I apply that same problem-solving mindset to building intuitive and reliable web applications using <span class="font-bold text-[#fe2919]">Laravel,</span> <span class="font-bold text-[#f7df1c]">JavaScript,</span> and <span class="font-bold text-[#00bcff]">TailwindCSS.</span> <span class="font-bold text-xl">My goal is to bridge the gap between user needs and technical execution, creating products people love to use.</span>
                             </p>
                         </div>
-                        <div class="flex flex-col gap-y-4">
+                        <div class="flex flex-col gap-y-4 align-bottom">
                             <h2 class="text-lg text-secondary-foreground text-center">Current Tech Stack:</h2>
                             <div class="flex flex-row justify-around items-end">
                                 <img src="/images/laravel-logo.svg" alt="Laravel logo" class="technology-logo">
@@ -59,8 +59,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col order-2 md:self-center">
-                        <img src="/images/pfp-cropped.webp" alt="Headshot of Walter" class="min-w-64 max-w-4xl rounded-xl"/>
+                    <div class="hidden  md:inline-grid md:self-center">
+                        <img src="/images/pfp-cropped.webp" alt="Headshot of Walter" class="min-w-64 max-w-full rounded-xl"/>
                     </div>
                 </section>
                 <section id="projects" class="bg-card-background flex flex-col gap-y-8 px-4 py-8 text-left rounded-3xl">
@@ -126,28 +126,30 @@
                         </div>
                     </div>
                 </section>
-                <section class="bg-card-background flex flex-col gap-4 px-4 py-8 text-left rounded-3xl text-pretty items-center">
+                <section id="testimonials" class="bg-card-background flex flex-col gap-4 px-4 py-8 text-left rounded-3xl text-pretty items-center">
                     <h2 class="text-2xl font-semibold">Testimonials</h2>
-                    <div class="flex flex-col gap-2 border-b border-zinc-700 md:max-w-2/3">
-                        <p class="italic">
-                            "Walter reported to me at Minuteman Press Intl., and I can confidently say he is an exceptional individual. He is not only kind and hardworking, but also a true team player. His eagerness to learn and his openness to constructive criticism sets him apart. Any team would be fortunate to have him."
-                        </p>
-                        <p class="text-sm text-secondary-foreground text-center pb-4">
-                            -Bruce Lentino, Lead IT Support Specialist
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-2 border-b border-zinc-700 md:max-w-2/3">
-                        <p class="italic">
-                            "I am writing this letter to express my utmost appreciation for Mr. Walter and
-                            his exceptional qualities. Walter is not only highly skilled in his work but also
-                            a truly delightful person to collaborate with. His soft-spoken demeanor and
-                            approachable personality make you feel as though you’ve known him for years,
-                            yet he consistently upholds the highest standards of professionalism both as an
-                            individual and in the workplace..."
-                        </p>
-                        <p class="text-sm text-secondary-foreground text-center pb-4">
-                            -Sammy, Owner of Minuteman Press Cudahy
-                        </p>
+                    <div class="lg:grid lg:grid-cols-2 lg:gap-x-4">
+                        <div class="flex flex-col gap-2 border-b border-zinc-700 md:max-w-2/3 lg:border-none lg:max-w-full">
+                            <p class="italic flex flex-grow">
+                                "Walter reported to me at Minuteman Press Intl., and I can confidently say he is an exceptional individual. He is not only kind and hardworking, but also a true team player. His eagerness to learn and his openness to constructive criticism sets him apart. Any team would be fortunate to have him."
+                            </p>
+                            <p class="text-sm text-secondary-foreground text-center pb-4 align-bottom">
+                                Bruce Lentino, Lead IT Support Specialist
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2 md:max-w-2/3 lg:max-w-full">
+                            <p class="italic flex-grow">
+                                "I am writing this letter to express my utmost appreciation for Mr. Walter and
+                                his exceptional qualities. Walter is not only highly skilled in his work but also
+                                a truly delightful person to collaborate with. His soft-spoken demeanor and
+                                approachable personality make you feel as though you’ve known him for years,
+                                yet he consistently upholds the highest standards of professionalism both as an
+                                individual and in the workplace..."
+                            </p>
+                            <p class="text-sm text-secondary-foreground text-center pb-4">
+                                Sammy, Owner of Minuteman Press Cudahy
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <section id="contact" class="bg-card-background flex flex-col gap-8 px-4 pt-8 text-left text-pretty rounded-3xl">
