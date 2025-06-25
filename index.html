@@ -18,7 +18,7 @@
         <div class="site mx-auto flex flex-col gap-16 px-4 min-w-s max-w-7xl">
             <nav class="flex flex-row justify-between mt-8">
                 <a href="index.html">
-                    <img src="public/images/wf-logo.webp" alt="logo" class="w-16" />
+                    <img src="/images/wf-logo.webp" alt="logo" class="w-16" />
                 </a>
                 <ul class="flex flex-row gap-4 self-center font-bold">
                     <li>
@@ -77,9 +77,9 @@
                                     <p>|</p>
                                     <a class="hover:text-foreground" href="https://walterfurrer.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                                 </div></div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/homepage-dark.webp" alt="Screenshot of the Portfolio project homepage">
-                            <p class="text-pretty">The very site you're on! Originally meant to act as a home for some simple JavaScript projects I was working on in order to learn the language, it turned into something I felt comfortable represnting myself online.</p>
-                            <div>
+                            <img class="w-full h-auto border border-zinc-800 rounded-md" src="/images/portfolio.svg" alt="Portfolio image">
+                            <p class="text-pretty flex-grow">The very site you're on! My little corner of the internet, you could say. Something that I plan to built upon as I continue learning new skills and technologies.</p>
+                            <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
                                     <li><p class="tag-highlight">HTML</p></li>
                                     <li><p class="tag-highlight">TailwindCSS</p></li>
@@ -95,9 +95,9 @@
                                     <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                                 </div>
                             </div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/homepage-dark.webp" alt="Screenshot of the Portfolio project homepage">
-                            <p class="text-pretty">A site to house some small JavaScript projects as I learn the language.</p>
-                            <div>
+                            <img class="w-full h-auto border border-zinc-800 rounded-md" src="/images/learning-js.svg" alt="Learning JavaScript image">
+                            <p class="text-pretty flex-grow"><span class="font-bold">Learning JavaScript</span> is what this portfolio site originally started as. A place to house some small JavaScript projects as I learn the language.</p>
+                            <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
                                     <li><p class="tag-highlight">HTML</p></li>
                                     <li><p class="tag-highlight">CSS</p></li>
@@ -114,9 +114,9 @@
                                     <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a> -->
                                 </div>
                             </div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-md brightness-50" src="/images/do-the-thing.webp" alt="Screenshot of Walter's 'do the thing' website">
-                            <p class="text-pretty">do the thing is my first project using Laravel. It was inspired by the lovely folks in the LGT Discord who pushed me to start building instead of getting caught up in tutorials or reading docs.</p>
-                            <div>
+                            <img class="w-full h-auto border border-zinc-800 rounded-md" src="/images/do-the-thing.svg" alt="do the thing image">
+                            <p class="text-pretty flex-grow"><span class="font-bold">do the thing</span> is my first project using Laravel. It was inspired by the lovely folks in the LGT Discord who pushed me to start building instead of getting caught up in tutorials or reading docs.</p>
+                            <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
                                     <li><p class="tag-highlight">HTML</p></li>
                                     <li><p class="tag-highlight">TailwindCSS</p></li>
@@ -162,55 +162,21 @@
                     </div>
                     <div class="cal-com xl:col-span-3">
                         <!-- Cal inline embed code begins -->
-                        <div class="contact__calendar" id="my-cal-inline"></div>
+                        <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
                         <script type="text/javascript">
-                            (function (C, A, L) {
-                                let p = function (a, ar) {
-                                    a.q.push(ar);
-                                };
-                                let d = C.document;
-                                C.Cal =
-                                    C.Cal ||
-                                    function () {
-                                        let cal = C.Cal;
-                                        let ar = arguments;
-                                        if (!cal.loaded) {
-                                            cal.ns = {};
-                                            cal.q = cal.q || [];
-                                            d.head.appendChild(d.createElement("script")).src = A;
-                                            cal.loaded = true;
-                                        }
-                                        if (ar[0] === L) {
-                                            const api = function () {
-                                                p(api, arguments);
-                                            };
-                                            const namespace = ar[1];
-                                            api.q = api.q || [];
-                                            if (typeof namespace === "string") {
-                                                cal.ns[namespace] = cal.ns[namespace] || api;
-                                                p(cal.ns[namespace], ar);
-                                                p(cal, ["initNamespace", namespace]);
-                                            } else p(cal, ar);
-                                            return;
-                                        }
-                                        p(cal, ar);
-                                    };
-                            })(window, "https://app.cal.com/embed/embed.js", "init");
-                            Cal("init", "coffee-chat", { origin: "https://cal.com" });
+                          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                        Cal("init", "coffee-chat", {origin:"https://app.cal.com"});
 
-                            Cal.ns["coffee-chat"]("inline", {
-                                elementOrSelector: "#my-cal-inline",
-                                config: { layout: "month_view" },
-                                calLink: "walterfurrer/coffee-chat",
-                            });
+                          Cal.ns["coffee-chat"]("inline", {
+                            elementOrSelector:"#my-cal-inline",
+                            config: {"layout":"month_view","theme":"dark"},
+                            calLink: "walterfurrer/coffee-chat",
+                          });
 
-                            Cal.ns["coffee-chat"]("ui", {
-                                cssVarsPerTheme: { light: { "cal-brand": "#1e1b4b" }, dark: { "cal-brand": "#818cf8" } },
-                                hideEventTypeDetails: false,
-                                layout: "month_view",
-                            });
-                        </script>
-                        <!-- Cal inline embed code ends --></div>
+                          Cal.ns["coffee-chat"]("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#1e1b4b"},"dark":{"cal-brand":"#818cf8"}},"hideEventTypeDetails":false,"layout":"month_view"});
+                          </script>
+                          <!-- Cal inline embed code ends -->
+                    </div>
                 </section>
             </main>
             <footer>
