@@ -30,7 +30,7 @@
 }
 
 .tag-highlight {
-    @apply bg-zinc-700 text-zinc-400 text-sm rounded-xs px-0.5;
+    @apply bg-zinc-700 text-zinc-200 text-sm rounded-xs px-0.5;
 }
 
 .project-title {
