@@ -15,39 +15,39 @@
         <title>Walter Furrer | Web Developer</title>
     </head>
     <body class="bg-background text-foreground h-svh box-border">
-        <div class="site mx-auto flex flex-col gap-16 px-4 min-w-s max-w-7xl">
+        <div class="site mx-auto flex flex-col gap-y-16 px-4 min-w-s max-w-7xl">
             <nav class="flex flex-row justify-between mt-8">
                 <a href="index.html">
                     <img src="/images/wf-logo.webp" alt="logo" class="w-16" />
                 </a>
-                <ul class="flex flex-row gap-4 self-center font-bold">
+                <ul class="flex flex-row gap-4 self-center text-base">
                     <li>
-                        <a href="#about" class="text-xl hover:text-indigo-400">About</a>
+                        <a href="#about" class="hover:text-indigo-400">About</a>
                     </li>
                     <li>
-                        <a href="#projects" class="text-xl hover:text-indigo-400">Projects</a>
+                        <a href="#projects" class="hover:text-indigo-400">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact" class="text-xl hover:text-indigo-400">Contact</a>
+                        <a href="#contact" class="hover:text-indigo-400">Contact</a>
                     </li>
                 </ul>
             </nav>
-            <main class="flex flex-col gap-y-8 mb-16">
-                <section id="about" class="section">
+            <main class="flex flex-col gap-32 mb-16">
+                <section id="about" class="bg-card-background flex flex-col gap-8 p-4 text-left rounded-3xl md:grid md:grid-cols-2 md:p-8">
                     <div class="flex flex-col gap-y-8">
                         <div class="flex flex-col gap-y-2">
-                            <h1 class="text-4xl">
+                            <h1 class="text-4xl font-bold">
                             Hi, I'm
                             <span class="text-highlight">Walter</span>
                             </h1>
-                            <p class="text-xl text-balance">Helping to bridge the gap between <span class="font-bold underline underline-offset-6">people and technology</span></p>
+                            <p class="text-xl text-balance">Helping to bridge the gap between <span class="">people and technology</span></p>
                         </div>
-                        <div class="flex flex-col flex-grow gap-y-4 text-lg text-pretty justify-center">
+                        <div class="flex flex-col flex-grow gap-y-4 text-base text-pretty justify-center">
                             <p>
-                                With nearly two decades of experience in B2B account management and customer support, <span class="font-bold text-xl">I bring a rare, user-centric perspective to software development.</span> I don't just build applications; I build solutions informed by a deep understanding of what end-users truly need.
+                                With nearly two decades of experience in B2B account management and customer support, <span class="">I bring a rare, user-centric perspective to software development.</span> I don't just build applications; I build solutions informed by a deep understanding of what end-users truly need.
                             </p>
                             <p>
-                                Today, I apply that same problem-solving mindset to building intuitive and reliable web applications using <span class="font-bold text-[#fe2919]">Laravel,</span> <span class="font-bold text-[#f7df1c]">JavaScript,</span> and <span class="font-bold text-[#00bcff]">TailwindCSS.</span> <span class="font-bold text-xl">My goal is to bridge the gap between user needs and technical execution, creating products people love to use.</span>
+                                Today, I apply that same problem-solving mindset to building intuitive and reliable web applications using <span class=" text-[#fe2919]">Laravel,</span> <span class=" text-[#f7df1c]">JavaScript,</span> and <span class=" text-[#00bcff]">TailwindCSS.</span> <span class="">My goal is to bridge the gap between user needs and technical execution, creating products people love to use.</span>
                             </p>
                         </div>
                         <div class="flex flex-col gap-y-4 align-bottom">
@@ -59,43 +59,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hidden  md:inline-grid md:self-center">
-                        <img src="/images/pfp-cropped.webp" alt="Headshot of Walter" class="min-w-64 max-w-full rounded-xl"/>
+                    <div class="hidden md:inline-grid md:self-center">
+                        <img src="/images/pfp-cropped.webp" alt="Headshot of Walter" class="min-w-64 max-w-full rounded-2xl"/>
                     </div>
                 </section>
-                <section id="projects" class="bg-card-background flex flex-col gap-y-8 p-8 text-left rounded-3xl">
+                <section id="projects" class="bg-card-background flex flex-col gap-8 p-8 text-left rounded-3xl">
                     <div>
                         <h2 class="text-3xl font-semibold">Projects</h2>
                         <p class="text-secondary-foreground text-balance text-lg">A growing collection of projects that I am working on</p>
                     </div>
-                    <div class="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-x-8">
+                    <div class="flex flex-col gap-8 md:grid md:grid-cols-2">
                         <div class="flex flex-col gap-2">
                             <div class="flex flex-col">
                                 <h3 class="project-title">Portfolio</h3>
-                                <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                <div class="flex flex-row gap-2 text-secondary-foreground">
                                     <a class="hover:text-foreground" href="https://github.com/walterfurrer/vite-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
                                     <p>|</p>
                                     <a class="hover:text-foreground" href="https://walterfurrer.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                                 </div></div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-md" src="/images/portfolio.svg" alt="Portfolio image">
+                            <img class="w-full h-auto border border-zinc-800 rounded-2xl" src="/images/portfolio.svg" alt="Portfolio image">
                             <p class="text-pretty flex-grow">The very site you're on! My little corner of the internet, you could say. Something that I plan to built upon as I continue learning new skills and technologies.</p>
                             <div class="align-bottom">
-                                <ul class="flex flex-row gap-x-2">
+                                <ul class="flex flex-row gap-2">
                                     <li><p class="tag-highlight">HTML</p></li>
                                     <li><p class="tag-highlight">TailwindCSS</p></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-y-2">
+                        <div class="flex flex-col gap-2">
                             <div class="flex flex-col">
                                 <h3 class="project-title">Learning JavaScript</h3>
-                                <div class="flex flex-row gap-x-2 text-secondary-foreground">
+                                <div class="flex flex-row gap-2 text-secondary-foreground">
                                     <a class="hover:text-foreground" href="https://github.com/walterfurrer/learning-js" target="_blank" rel="noopener noreferrer">GitHub</a>
                                     <p>|</p>
                                     <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                                 </div>
                             </div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-md" src="/images/learning-js.svg" alt="Learning JavaScript image">
+                            <img class="w-full h-auto border border-zinc-800 rounded-2xl" src="/images/learning-js.svg" alt="Learning JavaScript image">
                             <p class="text-pretty flex-grow"><span class="font-bold">Learning JavaScript</span> is what this portfolio site originally started as. A place to house some small JavaScript projects as I learn the language.</p>
                             <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
@@ -105,7 +105,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-y-2">
+                        <div class="flex flex-col gap-2">
                             <div class="flex flex-col">
                                 <h3 class="project-title">do the thing</h3>
                                 <div class="flex flex-row gap-x-2 text-secondary-foreground">
@@ -114,7 +114,7 @@
                                     <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a> -->
                                 </div>
                             </div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-md" src="/images/do-the-thing.svg" alt="do the thing image">
+                            <img class="w-full h-auto border border-zinc-800 rounded-2xl" src="/images/do-the-thing.svg" alt="do the thing image">
                             <p class="text-pretty flex-grow"><span class="font-bold">do the thing</span> is my first project using Laravel. It was inspired by the lovely folks in the LGT Discord who pushed me to start building instead of getting caught up in tutorials or reading docs.</p>
                             <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
@@ -167,7 +167,7 @@
                             Twitter/X.
                         </a></p>
                     </div>
-                    <div class="cal-com xl:col-span-3">
+                    <div class="cal-com sm:pb-4 lg:pb-0 xl:col-span-3">
                         <!-- Cal inline embed code begins -->
                         <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
                         <script type="text/javascript">
