@@ -11,6 +11,10 @@
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
         </style>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"/>
         <link rel="stylesheet" href="/src/style.css" />
         <title>Walter Furrer | Web Developer</title>
     </head>
@@ -69,7 +73,7 @@
                         <p class="text-secondary-foreground text-balance text-lg">A growing collection of projects that I am working on</p>
                     </div>
                     <div class="flex flex-col gap-8 md:grid md:grid-cols-2">
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 aspect-16/9">
                             <div class="flex flex-col">
                                 <h3 class="project-title">Portfolio</h3>
                                 <div class="flex flex-row gap-2 text-secondary-foreground">
@@ -77,7 +81,7 @@
                                     <p>|</p>
                                     <a class="hover:text-foreground" href="https://walterfurrer.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                                 </div></div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-2xl" src="/images/portfolio.svg" alt="Portfolio image">
+                            <img class="w-full h-auto border border-zinc-800 rounded-2xl aspect-16/9" src="/images/portfolio.svg" alt="Portfolio image">
                             <p class="text-pretty flex-grow">The very site you're on! My little corner of the internet, you could say. Something that I plan to built upon as I continue learning new skills and technologies.</p>
                             <div class="align-bottom">
                                 <ul class="flex flex-row gap-2">
@@ -86,7 +90,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 aspect-16/9">
                             <div class="flex flex-col">
                                 <h3 class="project-title">Learning JavaScript</h3>
                                 <div class="flex flex-row gap-2 text-secondary-foreground">
@@ -95,7 +99,7 @@
                                     <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                                 </div>
                             </div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-2xl" src="/images/learning-js.svg" alt="Learning JavaScript image">
+                            <img class="w-full h-auto border border-zinc-800 rounded-2xl aspect-16/9" src="/images/learning-js.svg" alt="Learning JavaScript image">
                             <p class="text-pretty flex-grow"><span class="font-bold">Learning JavaScript</span> is what this portfolio site originally started as. A place to house some small JavaScript projects as I learn the language.</p>
                             <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
@@ -105,7 +109,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 aspect-16/9">
                             <div class="flex flex-col">
                                 <h3 class="project-title">do the thing</h3>
                                 <div class="flex flex-row gap-x-2 text-secondary-foreground">
@@ -114,7 +118,7 @@
                                     <a class="hover:text-foreground" href="https://waltercodesjs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Site</a> -->
                                 </div>
                             </div>
-                            <img class="w-full h-auto border border-zinc-800 rounded-2xl" src="/images/do-the-thing.svg" alt="do the thing image">
+                            <img class="w-full h-auto border border-zinc-800 rounded-2xl aspect-16/9" src="/images/do-the-thing.svg" alt="do the thing image">
                             <p class="text-pretty flex-grow"><span class="font-bold">do the thing</span> is my first project using Laravel. It was inspired by the lovely folks in the LGT Discord who pushed me to start building instead of getting caught up in tutorials or reading docs.</p>
                             <div class="align-bottom">
                                 <ul class="flex flex-row gap-x-2">
@@ -155,7 +159,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="contact" class="bg-card-background flex flex-col gap-8 px-8 pt-8 text-left text-pretty rounded-3xl xl:grid xl:grid-cols-4">
+                <section id="contact" class="bg-card-background flex flex-col gap-8 pt-4 px-4 text-left text-pretty rounded-3xl md:pt-8 md:px-8 xl:grid xl:grid-cols-4">
                     <div class="flex flex-col gap-y-2 lg:max-w-2/3 xl:max-w-full">
                         <h2 class="text-3xl font-semibold">Let's Connect</h2>
                         <p class="text-lg">Feeling up for quick chat? Use the calendar below to schedule a time and date! You can also reach me at <a class="font-bold text-indigo-400 hover:underline" href="mailto:walterfurrer.dev@gmail.com">walterfurrer.dev@gmail.com</a> if email is more your style.</p>
@@ -186,6 +190,19 @@
                     </div>
                 </section>
             </main>
+            <footer>
+                <div class="flex flex-row gap-8 justify-center mb-16 text-3xl md:justify-end">
+                    <a href="https://github.com/walterfurrer">
+                        <i class="ph ph-github-logo hover:cursor-pointer hover:text-indigo-400"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/walterfurrer/">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+                    <a href="https://x.com/waltercodes">
+                        <i class="ph ph-x-logo"></i>
+                    </a>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
