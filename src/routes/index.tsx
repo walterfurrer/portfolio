@@ -15,7 +15,6 @@ function Home() {
         </div>
       </header>
       <main className="site-shell hero">
-        <p className="eyebrow">Portfolio</p>
         <h1 className="hero-title">Walter Furrer</h1>
         <p className="lead">Software Engineer @ Lights Over Atlanta</p>
       </main>
