@@ -2,17 +2,19 @@
   "name": "portfolio",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@11.22.0",
   "imports": {
     "#/*": "./src/*"
   },
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vp dev --port 3000",
     "generate-routes": "tsr generate",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vp build",
+    "preview": "vp preview"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/ibm-plex-serif": "^5.3.0",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-devtools": "latest",
     "@tanstack/react-router": "latest",
@@ -31,6 +33,8 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^6.0.1",
     "typescript": "^6.0.2",
-    "vite": "^8.0.0"
-  }
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@11.22.0"
 }
