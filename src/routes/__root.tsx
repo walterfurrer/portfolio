@@ -2,9 +2,11 @@ import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools"
 import { TanStackDevtools } from "@tanstack/react-devtools"
 
+import { NotFound } from "../components/NotFound"
 import appCss from "../styles.css?url"
 
 export const Route = createRootRoute({
+  notFoundComponent: NotFound,
   head: () => ({
     meta: [
       {
@@ -34,7 +36,7 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="bg-taupe-200 text-taupe-900">
+    <html lang="en">
       <head>
         <HeadContent />
       </head>

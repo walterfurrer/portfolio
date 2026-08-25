@@ -1,0 +1,114 @@
+.not-found {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center start;
+  width: 100%;
+  max-width: none;
+  min-height: 100dvh;
+  margin: 0;
+  padding: clamp(1rem, 4vw, 4rem);
+  overflow: hidden;
+  color: white;
+}
+
+.not-found__background,
+.not-found__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.not-found__background {
+  z-index: -2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.not-found__overlay {
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgb(5 17 13 / 45%) 0%, rgb(5 17 13 / 18%) 62%, rgb(5 17 13 / 10%) 100%),
+    linear-gradient(0deg, rgb(5 17 13 / 20%), transparent 55%);
+}
+
+.not-found__panel {
+  width: min(100%, 42rem);
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  border: 1px solid rgb(255 255 255 / 24%);
+  border-radius: clamp(1.25rem, 3vw, 2rem);
+  background: rgb(6 24 18 / 70%);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 28%);
+  backdrop-filter: blur(1rem) saturate(80%);
+  -webkit-backdrop-filter: blur(1rem) saturate(80%);
+}
+
+.not-found__label {
+  margin: 0 0 1rem;
+  color: rgb(255 255 255 / 78%);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.not-found h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  text-shadow: 0 0.125rem 1.25rem rgb(0 0 0 / 35%);
+}
+
+.not-found__body {
+  max-width: 58ch;
+  margin: clamp(1.25rem, 3vw, 2rem) 0 0;
+  color: rgb(255 255 255 / 88%);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.7;
+}
+
+.not-found__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgb(255 255 255 / 60%);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 92%);
+  color: rgb(12 45 33);
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.not-found__link:hover {
+  background: white;
+}
+
+.not-found__link:focus-visible {
+  outline: 0.1875rem solid white;
+  outline-offset: 0.25rem;
+}
+
+@media (max-width: 40rem) {
+  .not-found {
+    align-items: end;
+  }
+
+  .not-found__background {
+    object-position: 62% center;
+  }
+
+  .not-found h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+
+  .not-found__body {
+    line-height: 1.55;
+  }
+}
