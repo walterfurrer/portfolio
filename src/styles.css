@@ -71,6 +71,10 @@ body {
   color: var(--color-text-foreground);
 }
 
+button {
+  text-box: trim-both cap alphabetic;
+}
+
 main {
   margin: auto;
   max-width: clamp(40rem, 70vw, 68rem);
