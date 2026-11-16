@@ -26,12 +26,8 @@ function Home() {
         </button>
       </div>
       <div>
-        <p>
-          Just a change in order to test this new PR extension I built!
-        </p>
-        <p>
-          Hah, just kidding! I forgot to make a new branch...here's a new change.
-        </p>
+        <p>Just a change in order to test this new PR extension I built!</p>
+        <p>Hah, just kidding! I forgot to make a new branch...here's a new change.</p>
       </div>
     </main>
   )
